@@ -1,0 +1,21 @@
+{
+  "name": "sorting-algorithms",
+  "version": "1.0.0",
+  "description": "There are many algorithms that deal with sorting collections of data. One of the most basic forms of sorting is known as Bubble Sort and is named by it's nature of the order of data having a \"bubbling\" effect as a collection of data is sorted. We will start off by implementing a Bubble Sort algorithm on a one-dimensional Array.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^3.5.0",
+    "handlebars": "^4.0.6"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
