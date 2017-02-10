@@ -1,19 +1,23 @@
-There are many algorithms that deal with sorting collections of data. One of the most basic forms of sorting is known as Bubble Sort and is named by it's nature of the order of data having a "bubbling" effect as a collection of data is sorted. We will start off by implementing a Bubble Sort algorithm on a one-dimensional Array.
+Create a README.md file and for each algorithm include the following:
 
-Bubble Sort Implementation
+*Explain to a five year old how the algorithm works (3-4 sentences max)
+*Psuedo code for each sorting implementation
+*In your own words, describe the performance of the alogirthm for the following cases:
+  *Best case scenario
+  *Worst case scenario
 
-The trick to remembering bubble sort is to visualize that your array is vertical rather than horizontal. If smaller values are "deeper" in the array, they will "rise" to the top until they are the smallest value. If larger values are "higher" in the array, they will sink to the bottom until they are the largest value.
 
-Your challenge
+Bubble Sort:
+  Take the first number in the array and compare it to the next number in the array. If the first number is smaller than the second number, it can stay in the same place; otherwise, if the first number is larger than the second number, it should switch places with the smaller number. Continue to compare the numbers in pairs until they are in order from least to greatest. The best case scenario is that it's linear; the worst case scenario is that it's quadratic.
 
-Create a project and a repo for your Bubble Sort implementation. You probably want a README as well.
-Add Mocha/Chai to your project for writing your tests against your function.
-Write your tests FIRST that will indicate that your sorting function works with multiple inputs.
-Implement a function that will take an input Array and apply the bubble sort algorithm to sort the input and return the number of moves that were necessary to sort the Array.
-Extra
+Quick Sort:
+  Take the first number in the array, which becomes the pivot, and compare it to the remaining numbers in the array. If the number is less than the pivot, add it to the left array; if the number is greater than the pivot, add it to the right array. Continue doing this until there are no numbers remaining and combine the results, which should be in order from least to greatest. The best case scenario is that it's logarithmic; the worst case scenario is that it's quadratic.
 
-Create a way for all Arrays to be able to use your bubble sort function as a method of the Array object.
+Insertion Sort:
+  Take the first number in the array and compare it to the numbers ahead of it in the array. Move that number to its correct place in numerical order. Continue doing this with each number in the array until they are in order from least to greatest. The best case scenario is that it's linear; the worst case scenario is that it's quadratic.
 
-Super Extra
+Selection Sort:
+  Take the first number in the array, which becomes the minimum, and compare it to the next number in the array. If the minimum is smaller than the next number, it can stay in the same place; otherwise, if the minimum is larger than the next number, that next number becomes the new minimum. The numbers switch places based on the minimum. The best case scenario is that it's quadratic; the worst case scenario is that it's quadratic.
 
-Write a browser tool that will visually show the array and it's values as they are being sorted to see how the elements are moving in real time. It will be impossible to see things being sorted in real time, so you may need to tweak your function to make this work or find new ways of calling it.
+Merge Sort:
+  Take the array and split it in half. If the first number is smaller than the second number, it can stay in the same place; otherwise, if the first number is larger than the second number, it should switch places with the smaller number. Combine the split arrays. The best case scenario is that it's logarithmic; the worst case scenario is that it's logarithmic.
